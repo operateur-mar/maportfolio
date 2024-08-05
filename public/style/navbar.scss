@@ -1,0 +1,28 @@
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.navbar{
+    border-bottom: 1px solid $light-milky;
+    margin: 10px 0;
+   // padding : 0 10px;
+    .email{
+        color: $light-dark;
+        font-family: $font4;
+        .icon{
+            margin: 0 7px;
+            background-color: $contrast;
+            padding: 5px;
+            border-radius: 50px;
+            font-size: 13px;
+            color: $milky;
+        }
+    }
+    .nav-top-right-items{
+        a{
+            color: $light-dark;
+            font-family: $font4;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    }
+}

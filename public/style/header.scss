@@ -1,0 +1,131 @@
+.heading-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0px;
+    .img{
+       
+        img{
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            filter: grayscale(1);
+        }
+    }
+    h2{
+        background: $gradient ;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: $font2;
+        font-weight: bold;
+        font-size: 5em;
+        text-align: center;
+    }
+    h6{
+        color: $milky;
+        font-family: $font4;
+        margin: 10px 0px;
+    }
+    .download{
+        background-color: $contrast;
+        padding: 10px 20px;
+        color: $milky;
+        text-decoration: none;
+        font-family: $font2;
+        border: 1px solid $light-milky;
+        margin: 10px 0px;
+
+    }
+}
+.heading-social{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1em 0;
+    background-color: #1a1a1a;
+    opacity: 0.8;
+    background-image:  radial-gradient(#5f5c5c 0.5px, transparent 0.5px), radial-gradient(#5f5c5c 0.5px, #1a1a1a 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    padding: 5em 0; 
+    .items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .data{
+          color: $white;
+          font-size: 3em;
+          font-weight: bold;
+        }
+        .data-text{
+            color: $white;
+            text-align: center;
+            margin-top: -10px;
+            font-family: $font1;
+        }
+    }
+
+    /*.scroll{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        .scroll-btn{
+            border: 1px solid $milky;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            padding: 35px;
+            a{
+                font-size: 1.2em;
+                color: $milky;
+                font-weight: 100;
+            
+            }
+       }
+    }*/
+   /*.follow{
+    color: $milky;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    .icons{
+        i{
+            border-right: 2px solid $milky;
+            padding: 0 15px;
+            &:last-child{
+               border-right: none;
+            }
+        }
+    }
+   }*/
+   /*.quotes{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    flex-direction: column;
+    blockquote{
+        color: $milky;
+        font-family: $font4;
+        font-size: 1.2em;
+        span{
+            opacity: .5;
+            font-size: 1em;
+            font-size: $font4;
+            font-weight: 100;
+        }
+    }
+    .move{
+        color: $milky;
+        i{
+            margin: 0 10px;
+        }
+    }
+   }*/
+}

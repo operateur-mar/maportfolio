@@ -1,0 +1,16 @@
+.About{
+    color: $white;
+    margin: 4em 2em;
+    .about-content{
+        margin: 2em;
+        display: flex;
+       // width: 50%;
+        justify-content: center;
+        text-align: justify;
+        p{
+            padding: 0 12em;
+            font-size: 1.3em;
+            font-family: $font1;
+        }
+    }
+}

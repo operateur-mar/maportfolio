@@ -1,0 +1,74 @@
+.Todo{
+    padding:0em 2em 0 5em;
+    color: $white;
+   /* .items-row{
+        margin: 2em 0;
+        display: flex;
+        flex-direction: row;
+
+        .item{
+            display: flex;
+            flex-direction: row;
+           // justify-content: space-around;
+            align-items: center;
+            .icon{
+                display: flex;
+               // padding: 25px 25px;
+               // background-color: #fff;
+                color: #6d6d6d;
+                //border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.7em;
+            }
+            .item-component{
+                margin: 0 10px;
+                h3{
+                    font-family: $font2;
+                    font-weight: bold;
+                }
+                p{
+                    font-family: $font1;
+                    width: 70%;
+                    text-align: justify;
+                }
+            }
+        }
+    }*/
+    .grid-parent{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        .div1 { grid-area: 1 / 1 / 2 / 2; .icon{color: #C5FF95;} }
+        .div2 { grid-area: 1 / 2 / 2 / 3; .icon{color: #8576FF;} }
+        .div3 { grid-area: 1 / 3 / 2 / 4; .icon{color: #FA7070;}}
+        .div4 { grid-area: 2 / 1 / 3 / 2;.icon{color: #9DBC98;} }
+        .div5 { grid-area: 2 / 2 / 3 / 3;.icon{color: #7FC7D9;} }
+        .div6 { grid-area: 2 / 3 / 3 / 4;.icon{color: #FFFFDD;} }
+        .item{
+            display: flex;
+            flex-direction: row;
+           // justify-content: space-around;
+            align-items: center;
+            .icon{
+               font-size: 1.7em;
+                margin-right: 10px;
+               
+            }
+            .item-component{
+                margin: 0 10px;
+                h3{
+                    font-family: $font2;
+                    font-weight: bold;
+                }
+                p{
+                    font-family: $font1;
+                    width: 70%;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}

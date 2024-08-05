@@ -1,0 +1,13 @@
+.Projects .card img {
+  width: 100%;
+  height: 25vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Projects .card .gobtn {
+  display: flex;
+  justify-content: center;
+}
+.Projects .card .gobtn a {
+  text-decoration: none;
+}/*# sourceMappingURL=projects.css.map */

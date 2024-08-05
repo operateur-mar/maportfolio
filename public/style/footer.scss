@@ -1,0 +1,39 @@
+.footer{
+    width: 100%;
+   
+   display: flex;
+   align-items: normal;
+   text-align: left;
+   flex-direction: column;
+    margin: 1em 0;
+    background-color: #1a1a1a;
+    opacity: 0.8;
+    background-image:  radial-gradient(#5f5c5c 0.5px, transparent 0.5px), radial-gradient(#5f5c5c 0.5px, #1a1a1a 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    padding: 5em 0; 
+ //   padding: 5em;
+ h3{
+    margin: 0 3.4em;
+    color: $white;
+ }
+ .listitems{
+    margin: 25px 3em;
+    text-align: start;
+    li{
+        text-decoration: none;
+        list-style: none;
+        &::before{
+            content: '◻';
+            margin: 0 10px;
+        }
+        margin: 20px 0;
+        a{
+            text-decoration: none;
+
+            color: $white;
+            font-family: $font1;
+        }
+    }
+ }
+}

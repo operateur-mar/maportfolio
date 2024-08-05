@@ -1,0 +1,296 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* config */
+/* === colors ==== */
+/* === fonts === */
+body {
+  background-color: #161616 !important;
+}
+
+.section-title:nth-child(1) {
+  color: #fff;
+  margin: 4em 2em;
+  display: flex;
+  justify-content: center;
+}
+.section-title:nth-child(1) h2 {
+  font-family: "lato";
+  font-weight: bold;
+  position: relative;
+  z-index: 0;
+}
+.section-title:nth-child(1) h2::before {
+  content: "";
+  font-family: fontawesome;
+  position: absolute;
+  right: 70%;
+  bottom: 0;
+  top: -50%;
+  z-index: -1;
+  opacity: 0.1;
+  font-size: 2em;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar {
+  border-bottom: 1px solid #1e1e1e;
+  margin: 10px 0;
+}
+.navbar .email {
+  color: #6d6d6d;
+  font-family: "Tilt Neon";
+}
+.navbar .email .icon {
+  margin: 0 7px;
+  background-color: #1a1a1a;
+  padding: 5px;
+  border-radius: 50px;
+  font-size: 13px;
+  color: #cfcfcf;
+}
+.navbar .nav-top-right-items a {
+  color: #6d6d6d;
+  font-family: "Tilt Neon";
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.heading-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0px;
+}
+.heading-content .img img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: grayscale(1);
+}
+.heading-content h2 {
+  background: linear-gradient(90deg, #cfcfcf 0%, #e7e7e7 50%, #5d5a5a 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Noto Sans";
+  font-weight: bold;
+  font-size: 5em;
+  text-align: center;
+}
+.heading-content h6 {
+  color: #cfcfcf;
+  font-family: "Tilt Neon";
+  margin: 10px 0px;
+}
+.heading-content .download {
+  background-color: #1a1a1a;
+  padding: 10px 20px;
+  color: #cfcfcf;
+  text-decoration: none;
+  font-family: "Noto Sans";
+  border: 1px solid #1e1e1e;
+  margin: 10px 0px;
+}
+
+.heading-social {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1em 0;
+  background-color: #1a1a1a;
+  opacity: 0.8;
+  background-image: radial-gradient(#5f5c5c 0.5px, transparent 0.5px), radial-gradient(#5f5c5c 0.5px, #1a1a1a 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+  padding: 5em 0;
+  /*.scroll{
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      .scroll-btn{
+          border: 1px solid $milky;
+          border-radius: 50%;
+          height: 100px;
+          width: 100px;
+          text-align: center;
+          padding: 35px;
+          a{
+              font-size: 1.2em;
+              color: $milky;
+              font-weight: 100;
+
+          }
+     }
+  }*/
+  /*.follow{
+   color: $milky;
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   .icons{
+       i{
+           border-right: 2px solid $milky;
+           padding: 0 15px;
+           &:last-child{
+              border-right: none;
+           }
+       }
+   }
+  }*/
+  /*.quotes{
+   display: flex;
+   justify-content: center;
+   flex: 1;
+   flex-direction: column;
+   blockquote{
+       color: $milky;
+       font-family: $font4;
+       font-size: 1.2em;
+       span{
+           opacity: .5;
+           font-size: 1em;
+           font-size: $font4;
+           font-weight: 100;
+       }
+   }
+   .move{
+       color: $milky;
+       i{
+           margin: 0 10px;
+       }
+   }
+  }*/
+}
+.heading-social .items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.heading-social .items .data {
+  color: #fff;
+  font-size: 3em;
+  font-weight: bold;
+}
+.heading-social .items .data-text {
+  color: #fff;
+  text-align: center;
+  margin-top: -10px;
+  font-family: "lato";
+}
+
+.About {
+  color: #fff;
+  margin: 4em 2em;
+}
+.About .about-content {
+  margin: 2em;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+}
+.About .about-content p {
+  padding: 0 12em;
+  font-size: 1.3em;
+  font-family: "lato";
+}
+
+.Todo {
+  padding: 2em;
+  color: #fff;
+  /* .items-row{
+       margin: 2em 0;
+       display: flex;
+       flex-direction: row;
+
+       .item{
+           display: flex;
+           flex-direction: row;
+          // justify-content: space-around;
+           align-items: center;
+           .icon{
+               display: flex;
+              // padding: 25px 25px;
+              // background-color: #fff;
+               color: #6d6d6d;
+               //border-radius: 50%;
+               justify-content: center;
+               align-items: center;
+               font-size: 1.7em;
+           }
+           .item-component{
+               margin: 0 10px;
+               h3{
+                   font-family: $font2;
+                   font-weight: bold;
+               }
+               p{
+                   font-family: $font1;
+                   width: 70%;
+                   text-align: justify;
+               }
+           }
+       }
+   }*/
+}
+.Todo .grid-parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.Todo .grid-parent .div1 {
+  grid-area: 1/1/2/2;
+}
+.Todo .grid-parent .div2 {
+  grid-area: 1/2/2/3;
+}
+.Todo .grid-parent .div3 {
+  grid-area: 1/3/2/4;
+}
+.Todo .grid-parent .div4 {
+  grid-area: 2/1/3/2;
+}
+.Todo .grid-parent .div5 {
+  grid-area: 2/2/3/3;
+}
+.Todo .grid-parent .div6 {
+  grid-area: 2/3/3/4;
+}
+.Todo .grid-parent .item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.Todo .grid-parent .item .icon {
+  font-size: 1.7em;
+  margin-right: 10px;
+}
+.Todo .grid-parent .item .item-component {
+  margin: 0 10px;
+}
+.Todo .grid-parent .item .item-component h3 {
+  font-family: "Noto Sans";
+  font-weight: bold;
+}
+.Todo .grid-parent .item .item-component p {
+  font-family: "lato";
+  width: 70%;
+  text-align: justify;
+}
